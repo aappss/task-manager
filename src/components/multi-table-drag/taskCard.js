@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import PropTypes from "prop-types";
 import { Draggable } from "react-beautiful-dnd";
-// import "../styles.css";
+// import "../styles.css";  
 
 function TaskCard({ item, index }) {
   return (
@@ -14,7 +14,7 @@ function TaskCard({ item, index }) {
             {...provided.dragHandleProps}
             style={{
               userSelect: "none",
-              padding: 16,
+              // padding: 16,
               margin: "0 0 8px 0",
               minHeight: "50px",
               backgroundColor: snapshot.isDragging ? "#263B4A" : "#456C86",

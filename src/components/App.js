@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { DragDropContext } from "react-beautiful-dnd";
 import Column from "./multi-table-drag/column";
 import { status } from "../constant/mock";
+// import Navbar from "./Navbar/Navbar";
 
 const onDragEnd = (result, columns, setColumns) => {
   if (!result.destination) return;
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div style={{ display: "flex", justifyContent: "center", height: "100%" }}>
+      
       <DragDropContext
         onDragEnd={(result) => onDragEnd(result, columns, setColumns)}
       >
