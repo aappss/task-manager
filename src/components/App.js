@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { DragDropContext } from "react-beautiful-dnd";
 import Column from "./multi-table-drag/column";
 import { status } from "../constant/mock";
+// import '../assets/css/App.scss';
 // import Navbar from "./Navbar/Navbar";
 
 const onDragEnd = (result, columns, setColumns) => {
@@ -45,9 +46,11 @@ function App() {
   const [columns, setColumns] = useState(status);
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", height: "100%" }}>
-      
-      <DragDropContext
+    <div>
+      <div className="bg-gray-800 text-white p-4">
+      This is a component styled with Tailwind CSS!
+    </div>
+      {/* <DragDropContext
         onDragEnd={(result) => onDragEnd(result, columns, setColumns)}
       >
         {Object.entries(columns).map(([columnId, column], index) => {
@@ -72,7 +75,7 @@ function App() {
             </div>
           );
         })}
-      </DragDropContext>
+      </DragDropContext> */}
     </div>
   );
 }

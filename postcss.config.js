@@ -3,6 +3,9 @@ module.exports = {
     'postcss-import': {},
     'postcss-nested': {},
     'postcss-preset-env': {},
+    "tailwindcss": {},
+    "autoprefixer": {},
+    "postcss-import": {},
     'postcss-pxtorem': {
       rootValue: 16,
       unitPrecision: 5,
@@ -11,6 +14,6 @@ module.exports = {
       replace: true,
       mediaQuery: false,
       minPixelValue: 0
-    }
+    },    
   }
 }
